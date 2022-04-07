@@ -8,7 +8,7 @@ const FormPage = () => {
 
     <MDBContainer>
       <MDBRow>
-        <MDBCol md="6">
+        <MDBCol >
           <form>
             <p className="h5 text-center mb-4">Sign in</p>
             <div className="grey-text">

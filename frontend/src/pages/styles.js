@@ -16,5 +16,10 @@ export const BtnL = styled.button`
 export const Card = styled.div`
     margin-top: 5%;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    padding: ;
+    padding: 2rem;
+    max-width: 50vw;
+
 `;
+
+
+
