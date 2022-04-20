@@ -10,8 +10,13 @@ const config = {
     host:process.env.DB_HOST,
     database:process.env.DB_DATABASE,
     user:process.env.DB_USER,
-    pass:process.env.DB_PASS
+    pass:process.env.DB_PASS,
 
+    apiKey:process.env.APYKEY,
+    jwtSecret:process.env.JWT_SECRET,
+
+    passmail:proces.env.PASSMAIL,
+    mail:process.env.MAIL
 }
 
 module.exports = { config };
