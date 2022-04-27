@@ -1,4 +1,3 @@
-const boom = require('@hapi/boom');
 const UserService = require('./user.service') 
 const service = new  UserService();
 const boom = require('@hapi/boom');
@@ -22,16 +21,18 @@ class AuthService {
         return user;
     }
 
-    signToken(user){
-        const user = req.user;
+    signToken(user) {
         const payload = {
-          sub: 1,
-          role: "customer",
-        };
+          sub: user.id,
+          mail: user.mail
+        }
         const token = jwt.sign(payload, config.jwtSecret);
-        return{ user, token };
-    }
-
+        return {
+          user,
+          token
+        };
+      }
+    
    async mail(mail){
         const user = await service.findByEmail(email);
         if (!user) {

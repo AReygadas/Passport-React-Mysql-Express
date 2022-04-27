@@ -15,7 +15,7 @@ const config = {
     apiKey:process.env.APYKEY,
     jwtSecret:process.env.JWT_SECRET,
 
-    passmail:proces.env.PASSMAIL,
+    passmail:process.env.PASSMAIL,
     mail:process.env.MAIL
 }
 
